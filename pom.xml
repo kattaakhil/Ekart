@@ -117,7 +117,32 @@
             <version>2.1.4</version>
         </dependency>
     </dependencies>
+<repositories>
+ <repository>
+  <id>maven</id>
+  <url>https://pkgs.dev.azure.com/vinc14/pipelines/_packaging/maven/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>        
+</repositories>
+<distributionManagement>
+<repository>
+  <id>maven</id>
+  <url>https://pkgs.dev.azure.com/vinc14/pipelines/_packaging/maven/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+</distributionManagement>
 
+         
     <build>
         <plugins>
             <plugin>
@@ -148,7 +173,7 @@
         </plugins>
     </build>
 
-         <distributionManagement>
+<!--          <distributionManagement>
     <repository>
       <id>maven-releases</id>
       <name>maven-releases</name>
@@ -159,7 +184,7 @@
       <name>maven-snapshots</name>
       <url>http://3.108.254.192:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
-</distributionManagement>
+</distributionManagement> -->
 
 
 </project>
