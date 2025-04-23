@@ -15,9 +15,9 @@ spec:
       containers:
         - name: ekart
           image: vinay0807/shopping
-          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8070
+              protocol: TCP
 
 ---
 
