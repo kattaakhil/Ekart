@@ -17,7 +17,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: ekart-ssvc
+  name: ekartsvc
 spec:
   selector:
     app: vinay
